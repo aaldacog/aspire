@@ -1,13 +1,163 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<title>Page Title ASPIRE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Luis Montoya">
+    <title>Aspire</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="style/sidebar.css" rel="stylesheet">
+    <link href="style/dashboard.css" rel="stylesheet">
+    
 </head>
+
 <body>
 
-<h1>My *** First Heading Abraham Aldaco </h1>
-<p>My first paragraph Netzahualcoyotl ....</p>
-<p>My second paragraph Netzahualcoyotl ....</p>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="flex-shrink-0 p-3 bg-white sidebar" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                    <span class="fs-5 fw-semibold">ASPIRE</span>
+                </a>
+                <div class="pb-3 mb-3 border-bottom">
+                    <span class="fs-10 fw-light">Where everyone can find an academic environment to grow.</span>
+                </div>
+                
 
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="true">
+                            Home
+                        </button>
+                        <div class="collapse show" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">About</a></li>
+                                <li><a href="#" class="link-dark rounded">Contact</a></li>
+                              
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            Publications
+                        </button>
+                        <div class="collapse" id="dashboard-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Journal Papers</a></li>
+                                <li><a href="#" class="link-dark rounded">Conference Proceedings</a></li>
+                                <li><a href="#" class="link-dark rounded">Book Publishing</a></li>
+                                <li><a href="#" class="link-dark rounded">Other Publications</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse" aria-expanded="false">
+                            Student Projects Supervised
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Masters Theses</a></li>
+                                <li><a href="#" class="link-dark rounded">Doctoral Dissertations</a></li>
+                                <li><a href="#" class="link-dark rounded">Undergraduate Projects</a></li>
+                                <li><a href="#" class="link-dark rounded">Current Projects</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse" aria-expanded="false">
+                            Workshops
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">JavaScript</a></li>
+                                <li><a href="#" class="link-dark rounded">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+               
+                <div class="pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">About</h1>
+                </div>
+                <img src="images/profile.png" class="rounded float-start" width="200" alt="My Profile">
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius eros ac massa vulputate pharetra. Sed velit sem, scelerisque et lorem vel, accumsan maximus velit. Fusce a ipsum metus. Cras eleifend rutrum massa, eget tempus nibh laoreet eu. Nulla ex justo, suscipit lacinia rutrum ut, placerat at mi. Nam risus lectus, pulvinar ac vehicula a, facilisis at lacus. Ut condimentum egestas tortor, sed imperdiet nisi rhoncus at. Donec sit amet dignissim elit, quis eleifend leo. Quisque in eros pharetra, finibus leo sit amet, dapibus turpis. Suspendisse eget congue justo, vitae semper lacus. Maecenas laoreet vestibulum tempor. Phasellus a imperdiet augue. Vivamus blandit cursus tincidunt. Sed ornare nunc eu leo facilisis luctus.
+                </p>
+
+                <p>
+                    Nullam sit amet semper urna. Vestibulum eget leo est. Curabitur nec odio rutrum nunc porta porta. Integer semper nisi odio, sed blandit mauris pretium eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec hendrerit, dolor in euismod pharetra, erat mauris pellentesque tortor, sit amet ultrices massa tellus ut tellus. Mauris aliquet viverra volutpat. Etiam ut nulla at urna congue rhoncus quis sit amet lorem. Donec nec tempor est. Nam sem sem, aliquam at purus sed, sollicitudin aliquet metus. Curabitur eu nibh gravida, ultricies odio id, dictum diam. Maecenas consequat efficitur urna, a vehicula enim. Aliquam bibendum luctus ullamcorper.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius eros ac massa vulputate pharetra. Sed velit sem, scelerisque et lorem vel, accumsan maximus velit. Fusce a ipsum metus. Cras eleifend rutrum massa, eget tempus nibh laoreet eu. Nulla ex justo, suscipit lacinia rutrum ut, placerat at mi. Nam risus lectus, pulvinar ac vehicula a, facilisis at lacus. Ut condimentum egestas tortor, sed imperdiet nisi rhoncus at. Donec sit amet dignissim elit, quis eleifend leo. Quisque in eros pharetra, finibus leo sit amet, dapibus turpis. Suspendisse eget congue justo, vitae semper lacus. Maecenas laoreet vestibulum tempor. Phasellus a imperdiet augue. Vivamus blandit cursus tincidunt. Sed ornare nunc eu leo facilisis luctus.
+                </p>
+
+                <p>
+                    Nullam sit amet semper urna. Vestibulum eget leo est. Curabitur nec odio rutrum nunc porta porta. Integer semper nisi odio, sed blandit mauris pretium eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec hendrerit, dolor in euismod pharetra, erat mauris pellentesque tortor, sit amet ultrices massa tellus ut tellus. Mauris aliquet viverra volutpat. Etiam ut nulla at urna congue rhoncus quis sit amet lorem. Donec nec tempor est. Nam sem sem, aliquam at purus sed, sollicitudin aliquet metus. Curabitur eu nibh gravida, ultricies odio id, dictum diam. Maecenas consequat efficitur urna, a vehicula enim. Aliquam bibendum luctus ullamcorper.
+                </p>
+                
+            </main>
+        </div>
+    </div>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
 </body>
+
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
