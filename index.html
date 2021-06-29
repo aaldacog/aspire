@@ -76,9 +76,10 @@ body {font-family: "Lato", sans-serif;}
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Education')" id="defaultOpen">Education</button>
-  <button class="tablinks" onclick="openCity(event, 'Academic Experience')">Academic Experience</button>
-  <button class="tablinks" onclick="openCity(event, 'Industrial Experience')">Industrial Experience</button>
+  <button class="tablinks" onclick="topico(event, 'Education')" id="defaultOpen">Education</button>
+  <button class="tablinks" onclick="topico(event, 'Academic Experience')">Academic Experience</button>
+  <button class="tablinks" onclick="topico(event, 'Industrial Experience')">Industrial Experience</button>
+  <button class="tablinks" onclick="topico(event, 'ECOA')">ECOA</button>
 </div>
 
 <div id="Education" class="tabcontent">
@@ -96,8 +97,13 @@ body {font-family: "Lato", sans-serif;}
   <p>Industrial Experience is the capital of Japan.</p>
 </div>
 
+<div id="ECOA" class="tabcontent">
+    <h3>ECOA</h3>
+    <p>Evaluacion de los Estudiantes.</p>
+</div>
+
 <script>
-function openCity(evt, cityName) {
+function topico(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
