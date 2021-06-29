@@ -1,163 +1,130 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Luis Montoya">
-    <title>Aspire</title>
+<meta name="AbrahamAldaco" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
 
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 12px 08px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="style/sidebar.css" rel="stylesheet">
-    <link href="style/dashboard.css" rel="stylesheet">
-    
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
 </head>
-
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebarMenu" class="flex-shrink-0 p-3 bg-white sidebar" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                    <span class="fs-5 fw-semibold">ASPIRE</span>
-                </a>
-                <div class="pb-3 mb-3 border-bottom">
-                    <span class="fs-10 fw-light">Where everyone can find an academic environment to grow.</span>
-                </div>
-                
+<h4>Abraham N. Aldado-Gastelum, Ph.D.</h4>
 
-                <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#home-collapse" aria-expanded="true">
-                            Home
-                        </button>
-                        <div class="collapse show" id="home-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">About</a></li>
-                                <li><a href="#" class="link-dark rounded">Contact</a></li>
-                              
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="border-top my-3"></li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#dashboard-collapse" aria-expanded="false">
-                            Publications
-                        </button>
-                        <div class="collapse" id="dashboard-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Journal Papers</a></li>
-                                <li><a href="#" class="link-dark rounded">Conference Proceedings</a></li>
-                                <li><a href="#" class="link-dark rounded">Book Publishing</a></li>
-                                <li><a href="#" class="link-dark rounded">Other Publications</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#orders-collapse" aria-expanded="false">
-                            Student Projects Supervised
-                        </button>
-                        <div class="collapse" id="orders-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">Masters Theses</a></li>
-                                <li><a href="#" class="link-dark rounded">Doctoral Dissertations</a></li>
-                                <li><a href="#" class="link-dark rounded">Undergraduate Projects</a></li>
-                                <li><a href="#" class="link-dark rounded">Current Projects</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="border-top my-3"></li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#account-collapse" aria-expanded="false">
-                            Workshops
-                        </button>
-                        <div class="collapse" id="account-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark rounded">JavaScript</a></li>
-                                <li><a href="#" class="link-dark rounded">GitHub</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+<table style="width:100%">
+    <tr>
+      <th></th>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
 
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-               
-                <div class="pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">About</h1>
-                </div>
-                <img src="images/profile.png" class="rounded float-start" width="200" alt="My Profile">
-                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius eros ac massa vulputate pharetra. Sed velit sem, scelerisque et lorem vel, accumsan maximus velit. Fusce a ipsum metus. Cras eleifend rutrum massa, eget tempus nibh laoreet eu. Nulla ex justo, suscipit lacinia rutrum ut, placerat at mi. Nam risus lectus, pulvinar ac vehicula a, facilisis at lacus. Ut condimentum egestas tortor, sed imperdiet nisi rhoncus at. Donec sit amet dignissim elit, quis eleifend leo. Quisque in eros pharetra, finibus leo sit amet, dapibus turpis. Suspendisse eget congue justo, vitae semper lacus. Maecenas laoreet vestibulum tempor. Phasellus a imperdiet augue. Vivamus blandit cursus tincidunt. Sed ornare nunc eu leo facilisis luctus.
-                </p>
-
-                <p>
-                    Nullam sit amet semper urna. Vestibulum eget leo est. Curabitur nec odio rutrum nunc porta porta. Integer semper nisi odio, sed blandit mauris pretium eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec hendrerit, dolor in euismod pharetra, erat mauris pellentesque tortor, sit amet ultrices massa tellus ut tellus. Mauris aliquet viverra volutpat. Etiam ut nulla at urna congue rhoncus quis sit amet lorem. Donec nec tempor est. Nam sem sem, aliquam at purus sed, sollicitudin aliquet metus. Curabitur eu nibh gravida, ultricies odio id, dictum diam. Maecenas consequat efficitur urna, a vehicula enim. Aliquam bibendum luctus ullamcorper.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius eros ac massa vulputate pharetra. Sed velit sem, scelerisque et lorem vel, accumsan maximus velit. Fusce a ipsum metus. Cras eleifend rutrum massa, eget tempus nibh laoreet eu. Nulla ex justo, suscipit lacinia rutrum ut, placerat at mi. Nam risus lectus, pulvinar ac vehicula a, facilisis at lacus. Ut condimentum egestas tortor, sed imperdiet nisi rhoncus at. Donec sit amet dignissim elit, quis eleifend leo. Quisque in eros pharetra, finibus leo sit amet, dapibus turpis. Suspendisse eget congue justo, vitae semper lacus. Maecenas laoreet vestibulum tempor. Phasellus a imperdiet augue. Vivamus blandit cursus tincidunt. Sed ornare nunc eu leo facilisis luctus.
-                </p>
-
-                <p>
-                    Nullam sit amet semper urna. Vestibulum eget leo est. Curabitur nec odio rutrum nunc porta porta. Integer semper nisi odio, sed blandit mauris pretium eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec hendrerit, dolor in euismod pharetra, erat mauris pellentesque tortor, sit amet ultrices massa tellus ut tellus. Mauris aliquet viverra volutpat. Etiam ut nulla at urna congue rhoncus quis sit amet lorem. Donec nec tempor est. Nam sem sem, aliquam at purus sed, sollicitudin aliquet metus. Curabitur eu nibh gravida, ultricies odio id, dictum diam. Maecenas consequat efficitur urna, a vehicula enim. Aliquam bibendum luctus ullamcorper.
-                </p>
-                
-            </main>
-        </div>
+  <div class='container2'>
+        <img src="AbrahamAldacoGastelum.jpg" alt="Abraham Aldaco" width="150">
+    <div   class="text" >
+        <h4>Teaching and academy:</h4>
+        <p>Rated excellent teacher in courses related to programming, computing systems, algorithms, artificial intelligence, machine learning, analytics and data mining, networking.
+    15+ years in curricula development, academic advising and development of relationships between university and industry.
+        </p>
+    </div>
     </div>
 
+    <div class="item active">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <img class="pull-right" src="AbrahamAldacoGastelum.jpg" alt="Abraham Aldaco" width="150" />
+        </div>
+         <div class="col-md-4 col-sm-4 col-xs-4">
+         <span class="pull-right">
+         Thasos, an island surrounded by the crystal-clear emerald waters of the Aegean Sea is part of the Northeastern islands of Greece, also being the closest one to the continent.
+           </span>
+           </div>
+       </div>
+    </div>
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Education')" id="defaultOpen">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Academic Experience')">Academic Experience</button>
+  <button class="tablinks" onclick="openCity(event, 'Industrial Experience')">Industrial Experience</button>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
-        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
-        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
-        crossorigin="anonymous"></script>
-    <script src="js/dashboard.js"></script>
+<div id="Education" class="tabcontent">
+  <h3>Education</h3>
+  <p>Education is the capital city of England.</p>
+</div>
+
+<div id="Academic Experience" class="tabcontent">
+  <h3>Academic Experience</h3>
+  <p>Academic Experience is the capital of France.</p> 
+</div>
+
+<div id="Industrial Experience" class="tabcontent">
+  <h3>Industrial Experience</h3>
+  <p>Industrial Experience is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-
-</html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+</html> 
